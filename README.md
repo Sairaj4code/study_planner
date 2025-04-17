@@ -67,7 +67,7 @@ python server.py</code></pre>
   </ol>
 
   <p>See <code>CONTRIBUTING.md</code> for detailed guidelines.</p>
-
+  <h2>Deploy :- https://680090b9fcf0379b060bc07b--shiny-twilight-4412bb.netlify.app/dashboard</h2>
   <hr>
 
   <h2>📄 License</h2>
