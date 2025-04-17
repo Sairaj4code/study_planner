@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="element.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--Aside section start-->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <h2>Profile <span class="danger">User</span></h2>
+                </div>
+                <div class="close">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+            <!--end top-->
+
+            <div class="sidebar">
+                <a href="dashboard.html">
+                    <span class="material-symbols-outlined">
+                        grid_view
+                    </span>
+                    <h3>Dashboard</h3>
+
+                </a>
+                <a href="add_task.html" class="active">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Add Task</h3>
+                </a>
+                <a href="change_priority.html">
+                    <span class="material-symbols-outlined">change_circle</span>
+                    <h3>Change Priority</h3>
+                </a>
+                <a href="Index.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!--Aside section End-->
+        <!-- Add element section start -->
+         <main>
+        <h1>Add New Task</h1>
+        <div class="wrapper">
+            <form action="">
+                <input type="text" placeholder="Add new task" id="addtask" autocomplete="off">
+                <button id="add">Add</button>
+            </form>
+            <ul id="todo-list">
+                <li class="todo">
+                    <input type="checkbox" id="todo-1">
+                    <label for="todo-1" class="custom-checkbox">
+                        <svg fill="transparent" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                        </svg>
+                    </label>
+                    <label for="todo-1" class="todo-text">
+                        webdev project with html, css and js
+                    </label>
+                    <button class="delete-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z" />
+                        </svg>
+                    </button>
+                </li>
+            
+                    <li class="todo">
+                        <input type="checkbox" id="todo-2">
+                        <label for="todo-2" class="custom-checkbox">
+                            
+                            <svg fill="transparent" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" /> </svg>
+                        </label>
+                        <label for="todo-2" class="todo-text">
+                            webdev project with html, css and js
+                        </label>
+                        <button class="delete-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z" />
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+                
+        </div>
+    </main>
+        <!-- add element section -->
+</body>
+
+</html>

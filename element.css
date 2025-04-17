@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+/* variables */
+
+
+:root {
+    --clr-primary: #7380ec;
+    --clr-danger: #ff7782;
+    --clr-success: #41f1b6;
+    --clr-white: #fff;
+    --clr-info-dark: #7d8da1;
+    --clr-info-light: #dce1eb;
+    --clr-dark: #363949;
+    --clr-warnig: #ff4edc;
+    --clr-light: rgba(132, 139, 200, 0.18);
+    --clr-primary-variant: #111e88;
+    --clr-dark-variant: #677483;
+    --clr-color-background: #f6f6f9;
+  
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+  
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+  
+  }
+  
+  /* dark theme */
+  .dark-theme-variables {
+    --clr-color-background: #181a1e;
+    --clr-white: #202528;
+    --clr-light: rgba(0, 0, 0, 0.4);
+    --clr-dark: #edeffd;
+    --clr-dark-variant: #677483;
+    --box-shadow: 0 2rem 3rem var(--clr-light)
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+    appearance: none;
+}
+
+  body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow: hidden;
+    background: var(--clr-color-background);
+}
+
+.container { 
+    display: grid;
+    width: 96%;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto;
+    margin: 0 auto;
+}
+
+/* add element css */
+h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-success);
+}
+
+main .wrapper{
+    min-height: 100vh;
+    padding: 10px;
+    background-color: var(--clr-info-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+ }
+
+main #addtask{
+    box-sizing: border-box;
+    padding: 10px 100px;
+    
+    background: none;
+    border: 2px solid var(--clr-dark-variant);
+    border-radius: 1000px;
+    font: inherit;
+    color: var(--clr-dark);
+    caret-color: var(--clr-dark-variant);
+}
+
+form{
+    position: relative;
+}
+
+main #addtask:focus{
+    outline: none;
+}
+
+main #add{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--clr-danger);
+    height: 100%;
+    padding: 0 30px;
+    border: none;
+    border-radius: 1000px;
+    font: inherit;
+    font-weight: 600;
+    color: var(--clr-dark);
+    cursor: pointer;
+}
+
+main .todo{
+    margin-bottom: 10px;
+    padding: 0 16px;
+    background-color: var(--clr-info-dark);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+main .todo .todo-text{
+    padding: 15px;
+    padding-right: 0;
+    flex-grow: 1;
+    transition: 200ms ease;
+}
+
+main .delete-button{
+    padding: 3px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox{
+    border: 2px solid var(--clr-success);
+    border-radius: 50%;
+    min-height: 20px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: 200ms ease;
+    cursor: pointer;
+}
+
+main .todo-1{
+    height: 100%;
+    background-color: red;
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox{
+   background-color: var(--clr-danger); 
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox svg{
+  fill: var(--clr-primary);  
+}
+
+input[type="checkbox"]:checked ~ .todo-text{
+    text-decoration: line-through;
+    color: var(--clr-info-light);
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+
+
+/* End add element */
+
+a {
+    color: var(--clr-dark);   
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+p{
+    color: var(--clr-dark-variant);
+}
+
+b{
+   color: var(--clr-dark); 
+}
+
+.primary{
+    color: var(--clr-primary);
+}
+
+.success{
+    color: var(--clr-success);
+}
+
+.danger{
+    color: var(--clr-danger);
+}
+
+.warning{
+    color: var(--clr-warnig);
+}
+
+/* aside */
+
+aside{
+    height: 100vh;
+}
+
+aside .top{
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+aside .logo{
+   display: flex;
+   gap: 1rem; 
+}
+
+aside .top div.close{
+    display: none;
+}
+
+/************ 
+Sidebar
+************/
+aside .sidebar{
+    background-color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    position: relative;
+    top: 1rem;
+}
+
+aside .h3{
+    font-weight: 500;
+}
+
+aside .sidebar a{
+    display: flex;
+    color: var(--clr-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all .1s ease-in;
+}
+
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all .1s ease-in;
+}
+
+aside .sidebar a:last-child{
+   position: absolute;
+   bottom: 1rem;
+   width: 100%;
+}
+
+aside .sidebar a.active{
+    background: var(--clr-light);
+    color: var(--clr-primary);
+    margin-left: 0;
+    border-left: 5px solid var(--clr-primary);
+}
+
+aside .sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: var(--clr-primary);
+}
+
+aside .sidebar a:hover{
+    color: var(--clr-primary);
+}
+
+aside .sidebar a:hover span{
+   margin-left: 1rem; 
+   transition: .4s ease-in;
+}
+
+main h1{
+    padding: 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--clr-dark);
+    display: flex;
+    gap: 20px;
+    width: 500px;
+    justify-content: space-between;
+}
+
+
